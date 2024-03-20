@@ -16,6 +16,14 @@ public class Book implements Comparable<Book>{
         return this.name.toLowerCase().compareTo(o.getName().toLowerCase());
     }
 
+    @Override
+    public String toString() {
+        return "Kitap Adı: " + getName() + ", " +
+                "Yazar: " + getAuthor() + ", " +
+                "Sayfa Sayısı: " + getPageNumber() + ", " +
+                "Yayın Tarihi: " + getPublishDate();
+    }
+
     public String getName() {
         return name;
     }

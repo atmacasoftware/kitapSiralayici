@@ -13,8 +13,8 @@ public class Main {
         books.add(new Book("Hayvan Mezarlığı - Gecenin Pençesi", 399, "Stephen King", 2003));
 
         System.out.println("###### A-Z İsme Göre Sıralama ######");
-        for (Book b : books){
-            System.out.println(b.getName());
+        for (Book book : books){
+            System.out.println(book);
         }
 
         System.out.println("----------------------------------------------");
@@ -29,7 +29,7 @@ public class Main {
         books1.addAll(books);
         System.out.println("###### Sayfa Sayısına Göre Sıralama ######");
         for (Book book: books1){
-            System.out.println(book.getName());
+            System.out.println(book);
         }
     }
 }
